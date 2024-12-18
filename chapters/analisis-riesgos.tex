@@ -1,1 +1,32 @@
-\chapter{Análisis de riesgos del proyecto}
+\chapter{Análisis de riesgos}
+
+\begin{longtblr}[
+  caption = {Evaluación de Riesgos del Proyecto},
+  label = {tab:riesgos},
+]{
+    colspec = { |X[6]|X[7]|X[3]|X[8]|X[1]|X[1]|X[1]| },
+  rowhead = 1,
+  hlines,
+} 
+RIESGO & DESCRIPCION & ESTADO & PLAN & I & P & I*P \\
+
+Tiempo reducido & No tenemos tiempo suficiente para la entrega del sistema pedido por el cliente & Mitigated & Al hablar con el cliente, dejar muy claro el tiempo que necesitamos para hacer lo que nos pide, o lo que podemos llegar a hacer en el tiempo que él quiere & 0.9 & 0.8 & 0.72 \\
+
+No es factible la implementación del cliente & Lo que nos pide el cliente es algo muy complejo, no podemos llegar a conseguir esta implementación & Mitigated & Explicar al cliente que dicha funcionalidad no se puede añadir y las razones por las que no es posible & 1 & 0.5 & 0.5 \\
+
+Pérdida o ruptura del código & El código de la aplicación se pierde o rompemos el código, y no disponemos de ningún backup & Resolved & Desde el comienzo del proyecto usaremos github, de esta forma tendremos un control de versiones & 1 & 0.5 & 0.5 \\
+
+Cambio de requisitos por parte del cliente & El cliente decide cambiar la mayor parte de la aplicación & Mitigated & Explicar al cliente todas las funcionalidades que tendrá la app y darle un plazo de tiempo para realizar los cambios que él desee, después de este plazo no podrá realizar más cambios & 0.9 & 0.5 & 0.45 \\
+
+El cliente no comprende el software & Al realizar la entrega del software, el cliente no comprende como utilizar sus funciones, es decir, no comprende como usar nuestro software & Owned & Antonio Cabrera se ofrece a hacer una guía de uso de la aplicación, donde se explicarán todas las funcionalidades de esta & 0.7 & 0.5 & 0.35 \\
+
+No se divide correctamente el trabajo & El trabajo se reparte erróneamente, entonces el trabajo no avanza adecuadamente & Owned & Antonio Pérez (CEO) decide como dividir correctamente el trabajo entre todos. Deberá ver que partes del proyecto dependen de otras, entre otras cosas & 0.6 & 0.4 & 0.24 \\
+
+Fallo en la terminal & Las terminales del cliente no funcionan correctamente (no están actualizadas, etc...), no se puede implementar el software en las terminales & Accepted & Antes de comenzar el proyecto, comprobar si el software se puede implementar en las terminales del cliente, en caso de que esto no se pueda hacer, informar al cliente & 0.7 & 0.3 & 0.21 \\
+
+El cliente no comprende el alcance del software & Al entregar el código el cliente piensa que la aplicación tiene más opciones de las que tiene realmente & Mitigated & Desde un principio tenemos que explicarle al cliente con mucho detalle que va a tener la aplicación y lo que hará cada funcionalidad & 0.6 & 0.3 & 0.18 \\
+
+No hay suficiente almacenaje & El almacenaje en la nube contratado no es suficiente para todos los datos, el cliente tiene más datos de los que podemos almacenar & Owned & Alejandro Jiménez contactará con la empresa suministradora del almacenaje. Para contratar más capacidad en el almacenaje del proyecto & 0.8 & 0.2 & 0.16 \\
+
+El almacenaje en la nube se cae & La tecnología que usamos para el almacenaje de los datos se cae y deja inactivo todo el sistema & Accepted & Realizar una queja formal a la empresa suministradora de la nube y esperar a que se solucione & 0.9 & 0.1 & 0.09 \\
+\end{longtblr}
