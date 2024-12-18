@@ -1,0 +1,22 @@
+\chapter{Diagrama de Gantt}
+\newgantttimeslotformat{stardate}{%
+\def\decomposestardate##1.##2\relax{%
+\def\stardateyear{##1}\def\stardateday{##2}%
+}%
+\decomposestardate#1\relax%
+\pgfcalendardatetojulian{\stardateyear-01-01}{#2}%
+
+\advance#2 by-1\relax%
+\advance#2 by\stardateday\relax%
+}
+\begin{ganttchart}[
+hgrid,
+vgrid,
+expand chart=1.2\textwidth,
+time slot format=isodate
+]{2024-10-16}{2024-12-18}
+    \gantttitlecalendar{month=name, week} \\
+    \ganttbar{Task 1}{2024-10-16}{2024-11-02}
+\end{ganttchart}
+
+

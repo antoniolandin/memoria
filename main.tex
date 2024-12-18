@@ -1,0 +1,73 @@
+\documentclass{report}
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage[square,sort,comma,numbers]{natbib}
+\usepackage{url}
+\usepackage{pgfgantt}
+\usepackage[strings]{underscore}
+\usepackage{enumitem}
+\input{listing-settings}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+}
+
+\setlength{\parindent}{0pt} % Remove paragraph indentation
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+ 
+        \Large\textbf{AñadaMaster: K-VATA}
+ 
+        \vspace{0.5cm}
+            Memoria trabajo final
+        \vspace{1.5cm}
+ 
+        \textbf{Antonio Cabrera, Alejandro Jiménez y Antonio Pérez}
+ 
+        \vfill
+             
+        Trabajo para el doble grado de\\
+        Ingeniería del Software y Matemática Computacional\\
+             
+        \vspace{0.8cm}
+      
+        \includegraphics[width=0.4\textwidth]{figures/logo u-tad.png}
+             
+        Ingeniería Software\\
+        U-tad\\
+        España\\
+        Diciembre 2024
+             
+    \end{center}
+ \end{titlepage}
+
+\tableofcontents
+
+\listoffigures
+
+\include{./chapters/diagrama-gantt.tex}
+
+\include{./chapters/acta-entrevista.tex}
+
+\include{./chapters/epicas-user-stories.tex}
+
+\include{./chapters/acta-entrevista-post-mortem.tex}
+
+\end{document}

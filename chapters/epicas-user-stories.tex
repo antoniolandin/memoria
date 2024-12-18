@@ -1,0 +1,93 @@
+\chapter{Épicas y User Stories}
+
+\section{Épicas}
+
+Hemos agrupado nuestras user stories en 7 épicas:
+\begin{enumerate}
+    \item Gestión de usuarios
+    \item Gestión de productos
+    \item Gestión de pedidos
+    \item Gestión de facturas
+    \item Gestión de clientes
+    \item Gestión de login
+    \item Gestión de base de datos
+\end{enumerate}
+
+\section{User Stories}
+
+\begin{enumerate}
+
+    \item Gestión de base de datos:
+    \begin{enumerate}
+        \item  Como dueña quiero que no se puedan eliminar los datos.
+
+        \textbf{Requisito:} Los datos se pueden poner a 0, pero no eliminar.
+
+        \item Como dueña quiero que exista una confirmación y validación de los datos antes de que sean introducidos.
+
+        \textbf{Requisito:} Botón para guardar los datos, funciones que validan dichos datos.
+    \end{enumerate}
+
+    \item Gestión de clientes:
+    \begin{enumerate}
+        \item Como cliente quiero que mis datos de compra se guarden, para pedir la misma  cantidad de productos en mi próxima compra.
+
+        \textbf{Requisito:} Añadir función de volver a pedir (guardar antiguos pedidos para  volver a pedir).
+
+        \item Como dueña quiero que existan dos tipos de clientes, empresas e individuales.
+
+        \textbf{Requisito:} Crear dos tablas en la base de datos, para individuales y otro para las empresas.
+
+        \item Como dueña quiero que se guarden los cumpleaños de mis clientes, para poder felicitarlos y enviarles una caja regalo.
+
+        \textbf{Requisito:} Sistema de alerta de cumpleaños de los clientes.
+    \end{enumerate}
+
+    \item Gestión de facturas:
+    \begin{enumerate}
+        \item Como cliente quiero recibir una factura con todos los datos del pedido
+
+        \textbf{Requisito:} Creación de factura con todos los datos necesarios.
+
+        \item Como trabajador quiero que la factura se haga sola y así ahorrar tiempo.
+    
+        \textbf{Requisito:} Devolver la factura completa sobre un pedido seleccionado.
+ 
+    \end{enumerate}
+    
+    \item Gestión de login:
+    \begin{enumerate}
+        \item Como dueña quiero que mis trabajadores no bloqueen la aplicación por poner la contraseña mal varias veces, para que no se quede un empleado sin trabajar.
+
+        \textbf{Requisito:} Que no exista un límite de intentos al introducir la contraseña.
+
+        \item Como dueña quiero que la forma de iniciar sesión sea introduciendo el email y la contraseña de cada uno de mis trabajadores.
+    
+        \textbf{Requisito:} Cuentas con email y contraseña.
+    \end{enumerate}
+
+    \item Gestión de productos:
+    \begin{enumerate}
+        \item Como trabajador quiero poder añadir productos de forma eficaz, tener todos los productos existentes y modificar la cantidad almacenada.
+        
+            \textbf{Requisito:} UX fácil de entender y simple, poder modificar las cantidades.
+    \end{enumerate}
+
+    \item Gestión de pedidos:
+    \begin{enumerate}
+        \item Como trabajador quiero poder ver todos los datos de cada pedido, el estado en el que se encuentra, y el importe total con IVA y sin IVA.
+        
+            \textbf{Requisito:} Base de datos de pedidos con variable de estado, \texttt{importe+IVA}, \texttt{importe-IVA}.
+    \end{enumerate}
+
+    \item Gestión de usuarios:
+    \begin{enumerate}
+        \item Como dueña quiero que solo exista un administrador que sea mi gerente.
+
+        \textbf{Requisito:} Role de administrador, únicamente para el gerente de la bodega. 
+
+        \item Como trabajador voy a poder acceder a todos los campos de la aplicación, excepto la gestión de empleados.
+
+        \textbf{Requisito:} Dejar acceso a los trabajadores de todo.
+    \end{enumerate}
+\end{enumerate}
